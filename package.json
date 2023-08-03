@@ -12,6 +12,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r git@github.com:jeisacarvalho/-Gym-Website.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +40,7 @@
   "devDependencies": {
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.16",
     "react-icons": "^4.4.0",
     "swiper": "^8.3.2",
